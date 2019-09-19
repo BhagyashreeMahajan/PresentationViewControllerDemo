@@ -12,6 +12,8 @@
 		FA082726221402400039BB2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA082724221402400039BB2E /* Main.storyboard */; };
 		FA082728221402590039BB2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA082727221402590039BB2E /* Assets.xcassets */; };
 		FA08272B221402590039BB2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA082729221402590039BB2E /* LaunchScreen.storyboard */; };
+		FA0827342214031F0039BB2E /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0827332214031F0039BB2E /* PresentationController.swift */; };
+		FA08274A2214034E0039BB2E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0827492214034E0039BB2E /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FA082727221402590039BB2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA08272A221402590039BB2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA08272C2214025A0039BB2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA0827332214031F0039BB2E /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		FA0827492214034E0039BB2E /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		FA08271F221402400039BB2E /* PresentationViewControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FA0827322214031F0039BB2E /* Presentation */,
 				FA082720221402400039BB2E /* AppDelegate.swift */,
 				FA082722221402400039BB2E /* ViewController.swift */,
+				FA0827492214034E0039BB2E /* TestViewController.swift */,
 				FA082724221402400039BB2E /* Main.storyboard */,
 				FA082727221402590039BB2E /* Assets.xcassets */,
 				FA082729221402590039BB2E /* LaunchScreen.storyboard */,
 				FA08272C2214025A0039BB2E /* Info.plist */,
 			);
 			path = PresentationViewControllerDemo;
+			sourceTree = "<group>";
+		};
+		FA0827322214031F0039BB2E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FA0827332214031F0039BB2E /* PresentationController.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			files = (
 				FA082723221402400039BB2E /* ViewController.swift in Sources */,
 				FA082721221402400039BB2E /* AppDelegate.swift in Sources */,
+				FA08274A2214034E0039BB2E /* TestViewController.swift in Sources */,
+				FA0827342214031F0039BB2E /* PresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +210,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Amit Jha (Y48BACD325)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -255,7 +271,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Amit Jha (Y48BACD325)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -283,15 +299,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DDLZ74RZLH;
 				INFOPLIST_FILE = PresentationViewControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mahindra.crm.PresentationViewControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahindra.crm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = CRM_Dev_Profile;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,11 +321,12 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PresentationViewControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mahindra.crm.PresentationViewControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahindra.crm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

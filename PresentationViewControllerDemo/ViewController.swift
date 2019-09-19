@@ -12,9 +12,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+//        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//        let viewController = storyboard.instantiateViewController(withIdentifier: "TestViewController") as! TestViewController
+//        self.present(viewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func tapHereButtonTapped(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "TestViewController") as! TestViewController
+        self.present(viewController, animated: true, completion: nil)
+    }
 }
 
